@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Study Scheduler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Study Only Important Things Required for Exam</h2>
+      <h3>Smart Study Scheduler (80/20 Rule)</h3>
+
+      <form>
+        <label for="syllabus">Paste your syllabus:</label>
+        <textarea
+          id="syllabus"
+          rows="10"
+          placeholder="e.g. Chapter 1: Algebra..."
+        ></textarea>
+
+        <label for="days">How many days do you have to study?</label>
+        <input
+          type="number"
+          id="days"
+          min="1"
+          placeholder="Enter number of days"
+        />
+
+        <input type="submit" value="Generate Schedule" />
+      </form>
+
+      <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
