@@ -7,7 +7,7 @@ document.querySelector("form").addEventListener("submit", async function (e) {
   output.textContent = "Generating schedule...";
 
   try {
-    const response = await fetch("/api/schedule.js", {
+    const response = await fetch("/SmartStudy/api/schedule.js", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ syllabus, days }),
